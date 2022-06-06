@@ -272,45 +272,51 @@ body > footer a:hover {
   color: var(--link-color);
 }
 
-.experiences {
+ul.experiences {
   margin-top: 1em;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.experiences li {
-  display: block;
-  text-decoration: none;
-  border-radius: 0;
-  line-height: 1.2;
-  border-bottom: none;
-  transition: 0.01s background-color ease-out;
-  cursor: pointer;
-  width: auto;
-}
-
-.experiences li:hover {
+ul.experiences li:hover {
   background-color: var(--background-hover-color);
   border-radius: 0.5em;
 }
 
-.work-xp {
-  box-sizing: border-box;
+li.work-xp {
+  border-bottom: none;
+  border-radius: 0;
+  cursor: pointer;
+  list-style-type: none;
+  line-height: 1.2;
   margin: 0;
-  min-width: 0;
   padding: 1em;
+  text-decoration: none;
+  transition: 0.01s background-color ease-out;
+  flex: 0 1 auto;
+  width: 270px;
 }
 
-.work-xp a {
+@media all and (max-width: 660px) {
+  li.work-xp {
+    width: 100%;
+  }
+}
+
+li.work-xp a {
   display: flex;
   color: var(--text-color);
 }
 
-.work-xp a:hover {
+li.work-xp a:hover {
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }
 
-.work-xp img {
+li.work-xp img {
   max-width: 64px;
+  max-height: 64px;
   border-radius: 0.7em;
 }
 
