@@ -217,6 +217,13 @@ body > header {
   margin: 8rem 0 2rem;
 }
 
+body > header img {
+  border-radius: 128px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media all and (max-width: 660px) {
   body > header {
     margin: 5rem 0 3rem;
@@ -227,6 +234,7 @@ body > header h1 {
   font-size: 32px;
   line-height: 1em;
   font-weight: 700;
+  margin-top: 1em;
 }
 
 body > header h1 a {
