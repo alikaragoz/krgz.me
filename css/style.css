@@ -250,6 +250,7 @@ body > main h3 {
   line-height: 1em;
   font-weight: 600;
   margin-top: 3em;
+  clear: both;
 }
 
 body > main {
@@ -327,4 +328,17 @@ body > footer a:hover {
   color: #585858;
   margin-top: 0.2em;
   font-size: 0.7em;
+}
+
+ul.social-links {
+  padding-top: 0.1em;
+  padding-bottom: 1.5em;
+}
+
+ul.social-links li {
+  float: left;
+}
+
+ul.social-links li a {
+  font-size: 0.9em;
 }
