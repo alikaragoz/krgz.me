@@ -1,0 +1,11 @@
+{
+  "eslint.validate": ["javascript", "typescript", "html"],
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "[json][jsonc][css][scss][less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript][typescript][html]": {
+    "editor.formatOnSave": false
+  }
+}
