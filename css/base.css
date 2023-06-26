@@ -121,19 +121,18 @@ body > footer a:hover {
 }
 
 .experiences li {
-  display: block;
+  display: inline-block;
   text-decoration: none;
-  border-radius: 0;
+  border-radius: 0.5em;
   line-height: 1.2;
   border-bottom: none;
-  transition: 0.01s background-color ease-out;
+  transition: 0.2s background-color ease-out;
   cursor: pointer;
-  width: auto;
+  width: 49%;
 }
 
 .experiences li:hover {
   background-color: var(--background-hover-color);
-  border-radius: 0.5em;
 }
 
 .work-xp {
@@ -191,20 +190,18 @@ ul.social-links li a {
 }
 
 .apps li {
-  display: block;
   display: inline-block;
   text-decoration: none;
-  border-radius: 0;
+  border-radius: 0.5em;
   line-height: 1.2;
   border-bottom: none;
-  transition: 0.01s background-color ease-out;
   cursor: pointer;
   width: 24%;
+  transition: 0.2s background-color ease-out;
 }
 
 .apps li:hover {
   background-color: var(--background-hover-color);
-  border-radius: 0.5em;
 }
 
 .app {
@@ -242,5 +239,9 @@ ul.social-links li a {
 @media all and (max-width: 660px) {
   .apps li {
     width: 49%;
+  }
+
+  .experiences li {
+    width: 100%;
   }
 }
