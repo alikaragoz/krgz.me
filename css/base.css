@@ -185,3 +185,62 @@ ul.social-links li {
 ul.social-links li a {
   font-size: 0.9em;
 }
+
+.apps {
+  margin-top: 1em;
+}
+
+.apps li {
+  display: block;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 0;
+  line-height: 1.2;
+  border-bottom: none;
+  transition: 0.01s background-color ease-out;
+  cursor: pointer;
+  width: 24%;
+}
+
+.apps li:hover {
+  background-color: var(--background-hover-color);
+  border-radius: 0.5em;
+}
+
+.app {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  padding: 1em;
+}
+
+.app a {
+  color: var(--text-color);
+}
+
+.app a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.app img {
+  max-width: 64px;
+  border-radius: 0.7em;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.app span {
+  display: block;
+  margin-top: 0.3em;
+  font-size: 0.7em;
+  color: var(--text-color);
+  text-align: center;
+}
+
+@media all and (max-width: 660px) {
+  .apps li {
+    width: 49%;
+  }
+}
